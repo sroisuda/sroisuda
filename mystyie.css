@@ -1,0 +1,16 @@
+
+body{
+    @import url(https://fonts.googleapis.com/css?family=Yellowtail);
+
+       background-color: pink ;
+  color: brown;
+    font-family:'Yellowtail',sans-serif;
+    
+   
+}
+h1{
+   @import url(https://fonts.googleapis.com/css?family=Pangolin);
+    background-color: pink ;
+    color: brown;
+    font-family: 'Pangolin'sans-serif;
+}

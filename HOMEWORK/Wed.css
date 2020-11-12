@@ -1,0 +1,35 @@
+a:link, a:visited {
+    background-color: coral;
+    color: cyan;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 11em; 
+  border: 1px solid #000000;
+  word-wrap: break-word;
+  }
+  
+  a:hover, a:active {
+    background-color: back;
+  }
+  body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image: url(/images/20278657f.jpg);
+    width: 60%;
+    height: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: 0.02em;
+    font-weight: 500;
+    
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
+      
