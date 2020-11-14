@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บันทึกออเดอร์อาหาร</title>
+    <link rel="stylesheet" href="jndex.css">
+    <style> 
+        input[type=text] {
+          width: 50%;
+          padding: 6px 10px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: none;
+          background-color: #d6f7c3c2;
+          color: rgb(163, 17, 248);
+        }
+        </style>
+    <center><h1 style="color:rgb(233, 134, 22); ">Save food orders</h1></center>
+
+    <div>
+        <center>Table :</center>
+        <center><input type="text" id="Product_Name" name="Product_Name"> <br> </center>
+        <center>  Food : </center>
+        <center> <input type="text" id="Product_Among" name="Product_Among"> <br> </center>
+        <center> Price : </center>
+        <center><input type="text" id="Product_Price" name="Product_Price"> <br> </center>
+        <center>  State : </center>
+        <center>   <input type="text" id="Product_State" name="Product_State"> <br>  </center>
+        <center><button id="submit">Submit</button> </center>
+        
+    </div>
+</head>
+<body>
+    <
+</body>
+</html>
+<script>
+    var db = openDatabase('DB_001','1.0','DB_001',2 * 1024 * 1024);
+    $(function(){
+        db.transaction(function(transaction){
+            var sql =`CREATE TABLE IF NOT EXISTS "Orde" (
+	"Orde_ID"	INTEGER,
+	"Order_Table"	TEXT,
+	"Order_Food"	TEXT,
+	"Order_Price"	INTEGER,
+	"Order_State"	TEXT,
+	PRIMARY KEY("Orde_ID" AUTOINCREMENT);
+
+
+);` ;
+            transaction.executeSql(sql,undefined,function(){
+                //alert("Table is created successfuly");
+            },function(){
+               // alert("Table is already being created");
+            })
+    });
+})
+$('#submit').click(function(){
+    var Order_Food =$('#Food').val();
+    var Order_Table =$('#Table').val();
+    var Order_Price =$('#Price').val();
+    var Order_State =$('#State').val();
+    var query=`INSERT INTO Orden(Orde_Table,Order_Food,Order_Price,Order_State) values ("${Order_Table}",${Order_Food},${Order_Price},${Order_State})`
+          db.transaction(function(transaction){
+            var sql=`INSERT INTO Orden(Orde_Table,Order_Food,Order_Price,Order_State) values ("${Order_Table}",${Order_Food},${Order_Price},${Order_State})`;
+            transaction.executeSql(sql,undefined,function(){
+                alert("Table is created successfully");
+            },function(){
+                alert("Table is already being created");
+            })
+        });
+    })
+</script>

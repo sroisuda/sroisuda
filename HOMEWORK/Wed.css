@@ -1,35 +1,52 @@
+
 a:link, a:visited {
-    background-color: coral;
-    color: cyan;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    width: 11em; 
-  border: 1px solid #000000;
-  word-wrap: break-word;
+  background-color: rgba(240, 248, 165, 0.719);
+  color: rgba(29, 56, 17, 0.425);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 11em; 
+border: 1px solid #000000;
+word-wrap: break-word;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image: url("./image/ไอที.jpg");
+  
+  width: 100%;
+  height: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: 0.02em;
+  font-weight: 600;
+  color: #b4b298e0;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  
   }
   
-  a:hover, a:active {
-    background-color: back;
-  }
-  body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
-    background-image: url(/images/20278657f.jpg);
-    width: 60%;
-    height: 50%;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: 0.02em;
-    font-weight: 500;
-    
+  img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
     }
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
+    
+      input[type=text] {
+        width: 100%;
+        padding: 6px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: #eebaee;
+        color: rgb(204, 120, 253);
       }
-      
+
+    

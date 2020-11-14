@@ -1,0 +1,14 @@
+@import url("./font/Sarabun-BoldItalic.ttf");
+  body {
+    background-image: url("./image/f1e86e50-e8bf-11e9-8c36-f39186388bce_original.jpg")
+}
+  div {
+    border: 1px solid rgba(198, 228, 201, 0.644);
+    margin: 10px 20px 55px 80px;
+    background-color: rgba(223, 232, 235, 0.685);
+  }
+  
+
+
+
+
